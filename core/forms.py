@@ -35,7 +35,6 @@ class TestResultForm(forms.ModelForm):
 
 
 class TermsForm(forms.ModelForm):
-    terms = forms.CharField(widget=CKEditorWidget())
     class Meta:
         model = TermsAndCondition
         fields = '__all__'

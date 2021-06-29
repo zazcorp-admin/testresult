@@ -1,3 +1,4 @@
+{% load static %}
 <html>
 <head>
 <link href="img/logo-icon.png" rel="icon" type="image/png" />
@@ -66,22 +67,22 @@ font-family:arial black;
 <td>SNF(7.8 to 8.4)</td><td>{{test.snf}}</td>
 </tr>
 <tr  style="background:gray;">
-<td>Urea(0.0% to 0.5%)</td><td><img src="green.png" height="15rem" width="15rem">{{test.urea}}</td>
+<td>Urea(0.0% to 0.5%)</td><td><img src="{% static '/img/green.png' %}" height="15rem" width="15rem">{{test.urea}}</td>
 </tr>
 <tr>
-<td>Starch(0.0% to 0.5%)</td><td><img src="green.png" height="15rem" width="15rem">{{test.starch}}</td>
+<td>Starch(0.0% to 0.5%)</td><td><img src="{% static '/img/green.png' %}" height="15rem" width="15rem">{{test.starch}}</td>
 </tr>
 <tr  style="background:gray;">
-<td>Detergent(0.0% to 0.5%)</td><td><img src="green.png" height="15rem" width="15rem">{{test.detergent}}</td>
+<td>Detergent(0.0% to 0.5%)</td><td><img src="{% static '/img/green.png' %}" height="15rem" width="15rem">{{test.detergent}}</td>
 </tr>
 <tr>
-<td>Antibiotic(0.0% to 0.5%)</td><td><img src="green.png" height="15rem" width="15rem">{{test.antibiotic}}</td>
+<td>Antibiotic(0.0% to 0.5%)</td><td><img src="{% static '/img/green.png' %}" height="15rem" width="15rem">{{test.antibiotic}}</td>
 </tr>
 <tr  style="background:gray;">
-<td>Acidity(0.0v/v-68.0v/v)</td><td><img src="green.png" height="15rem" width="15rem">{{test.acidity}}</td>
+<td>Acidity(0.0v/v-68.0v/v)</td><td><img src="{% static '/img/green.png' %}" height="15rem" width="15rem">{{test.acidity}}</td>
 </tr>
 <tr>
-<td>Caustic Soda(0.0% to 0.5%)</td><td><img src="green.png" height="15rem" width="15rem">{{test.caustic_soda}}</td>
+<td>Caustic Soda(0.0% to 0.5%)</td><td><img src="{% static '/img/green.png' %}" height="15rem" width="15rem">{{test.caustic_soda}}</td>
 </tr>
 </table>
 </div>

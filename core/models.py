@@ -12,7 +12,7 @@ class TestResult(models.Model):
     antibiotic = models.CharField(max_length=1000,default='(Non-Adulterated)')
     acidity = models.CharField(max_length=1000,default='(Non-Adulterated)')
     caustic_soda = models.CharField(max_length=1000,default='(Non-Adulterated)')
-    desc = models.TextField()
+    desc = RichTextField()
     test_date = models.DateTimeField(auto_now_add=True)
 
 

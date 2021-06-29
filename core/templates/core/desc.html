@@ -42,8 +42,12 @@ font-family:arial black;
 }
 #title{
     top: 65%;
-    left: 11%;
+    left: 9%;
     position: absolute;
+}
+#descid{
+    position:absolute;
+    left:9%;
 }
 </style>
 <div class="date" id="date">
@@ -84,7 +88,7 @@ font-family:arial black;
 <div class="texts" id="texts">
 <p class = 'title' id="title">{{test.title}}</p>
 <div class="testD" id="testD">
-<b>TEST DESCRIPTION</b></br>
+<b id="descid">TEST DESCRIPTION</b></br>
 {{test.desc|safe}}
 </div>
 </div>

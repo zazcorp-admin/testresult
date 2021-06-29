@@ -30,6 +30,11 @@
         <li class="nav-item">
           <a class="nav-link" href="{% url 'Logout' %}">Logout</a>
         </li>
+        {% for term in terms %}
+        <li class="nav-item">
+          <a class="btn btn-danger" class="nav-link" href="{% url 'UpdateTerms' term.id%}">Logout</a>
+        </li>
+        {% endfor %}
       </ul>
     </div>
   </div>

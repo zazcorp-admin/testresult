@@ -39,9 +39,11 @@ def desc(request, pk):
 
 
 def adminPanel(request):
+    terms = TermsAndCondition.objects.all()
     tests = TestResult.objects.order_by('-test_date')
     context = {
-        'tests':tests
+        'tests':tests,
+        'terms': terms
     }
     return render(request, 'core/admin_panel.html', context)
 

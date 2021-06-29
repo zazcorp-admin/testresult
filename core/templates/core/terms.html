@@ -1,0 +1,20 @@
+<html>
+<head>
+<link href="img/logo-icon.png" rel="icon" type="image/png" />
+<title>Terms and conditions -Minksha Farms</title>
+</head>
+<body>
+<style>
+.tc{
+text-align:center;
+font-weight:bold;
+font-size:2rem;
+}
+</style>
+
+{% for term in terms %}
+<div class="tc" id="tc">Terms & Conditions </div></br>
+<div class="tc-texts" id="tc-texts">{{term.terms | safe}}</div>
+{% endfor %}
+</body>
+</html>

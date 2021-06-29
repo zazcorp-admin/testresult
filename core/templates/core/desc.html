@@ -37,8 +37,13 @@ margin-left:10rem;
 margin-top: 5rem;
 font-size:1.2rem;
 }
-.texts p{
+.title{
 font-family:arial black;
+}
+#title{
+    top: 65%;
+    left: 11%;
+    position: absolute;
 }
 </style>
 <div class="date" id="date">
@@ -77,10 +82,10 @@ font-family:arial black;
 </table>
 </div>
 <div class="texts" id="texts">
-<p>{{test.title}}</p>
+<p class = 'title' id="title">{{test.title}}</p>
 <div class="testD" id="testD">
 <b>TEST DESCRIPTION</b></br>
-{{test.desc | safe}}
+{{test.desc|safe}}
 </div>
 </div>
 </body>

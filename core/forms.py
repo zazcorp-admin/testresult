@@ -18,6 +18,7 @@ class TestResultForm(forms.ModelForm):
             'acidity': 'Acidity(0.0v/v-68.0v/v)',
             'caustic_soda': 'Caustic Soda(0.0% to 0.5%)',
             'desc': 'Description',
+            'test_date': 'Date'
 
         }
 
@@ -31,6 +32,7 @@ class TestResultForm(forms.ModelForm):
             'antibiotic': forms.TextInput(attrs={'class':'form-control'}),
             'acidity': forms.TextInput(attrs={'class':'form-control'}),
             'caustic_soda': forms.TextInput(attrs={'class':'form-control'}),
+            'test_date': forms.DateInput(attrs={'class':'form-control', 'id':'datepicker'})
         }
 
 

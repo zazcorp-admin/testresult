@@ -13,11 +13,11 @@ class TestResult(models.Model):
     acidity = models.CharField(max_length=1000,default='(Non-Adulterated)')
     caustic_soda = models.CharField(max_length=1000,default='(Non-Adulterated)')
     desc = RichTextField()
-    test_date = models.DateTimeField(auto_now_add=True)
+    test_date = models.DateField(auto_now_add=False, auto_now=False, null=True, blank=True)
 
 
     def __str__(self):
-        return str(self.title) + '-->' + str(self.test_date)
+        return str(self.title) + '-->' +str(self.test_date)
 
 
 
